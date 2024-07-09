@@ -151,6 +151,9 @@
     .desktop-only {
         display: none;
     }
+    .logo {
+        display: none;
+    }
 }
 
 @media (min-width: 1001px) {
@@ -168,5 +171,8 @@
 
     .text-mobile {
         display: none;
+    }
+    .logo {
+        display: block;
     }
 }
