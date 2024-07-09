@@ -40,6 +40,35 @@
     border: 2px solid #ffc107;
 }
 
+.cursor-icon {
+    position: absolute;
+    top: 50%;   /* Centraliza verticalmente */
+    left: 50%;  /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o centro do ícone */
+    font-size: 2rem; /* Tamanho do ícone */
+    color: rgb(0, 0, 0);  /* Cor do ícone */
+    animation: blink 1s infinite; /* Efeito de piscar */
+}
+
+/* Adiciona um efeito 3D quando o mouse está sobre a imagem */
+.efeito-3d:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da imagem */
+    box-shadow: 0 10px 20px rgb(3, 3, 3); /* Adiciona uma sombra */
+}
+
+/* Adiciona um cursor pointer ao passar o mouse */
+.cursor-pointer:hover {
+    opacity: 1;
+}
+
+/* Efeito de piscar */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+
 .text-desktop {
     display: none;
 }
